@@ -44,8 +44,16 @@ public class AzureSpringCurdAppApplication implements CommandLineRunner {
 		cust1.setPhone("1223111333");
 		cust1.setGender("Male");
 		cust1.setAddress("Hyderabad");
+		Customer cust2= new Customer();
+		cust2.setFirstName("Sunitha");
+		cust2.setLastName("Kumari");
+		cust2.setEmail("sunitha@gmail.com");
+		cust2.setPhone("122311133443");
+		cust2.setGender("Female");
+		cust2.setAddress("Bangalore");
 		list.add(cust);
 		list.add(cust1);
+		list.add(cust2);
 		customerRepository.saveAll(list);
 	}
 
